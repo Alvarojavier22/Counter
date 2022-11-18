@@ -1,4 +1,7 @@
-
+.container {
+    align-items: center;
+    display: flex;
+}
 /* 
 
     You can write your own styles here...
