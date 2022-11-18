@@ -11,7 +11,7 @@ const Home = () => {
 		var interval= setInterval(()=> setSecond(second +1), 1000)
 		return ()=> clearInterval(interval)
 		})
-		return <div className="container-warning">
+		return <div>
 		<Contador second={second} />
 		</div>
 };
