@@ -6,13 +6,20 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
+	let timer
+	
+	const [miliSeconds, setMiliSeconds] = useState (0)
 	const [second, setSecond] = useState(0)
+	const [minute, setMinute] = useState (0)
+
 	useEffect(() => {
-		var interval= setInterval(()=> setSecond(second +1), 1000)
-		return ()=> clearInterval(interval)
-		})
+		timer = setInterval(() => {
+		  setMiliSeconds(prevCount => prevCount + 1)
+
+		}, 100)
+	}, [])
 		return <div>
-		<Contador second={second} />
+		<Contador miliSeconds={miliSeconds} second = {second} minute = {minute} />
 		</div>
 };
 

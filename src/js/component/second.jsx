@@ -11,7 +11,7 @@ const Contador = (props) => {
             <div className="cuarto">{Math.floor(props.second / 3600)}</div>
             <div className="tercero">{Math.floor(props.second / 60)}</div>
             <div className="segundo">{Math.floor(props.second / 3600) * 60}</div>
-            <div className="primero">{Math.floor(props.second % 10)}</div>
+            <div className="primero">{Math.floor(props.miliSeconds)}</div>
 
 
         </div>
